@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Video } from '../video';
-import { from } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-video-grid',
@@ -11,17 +11,27 @@ import { from } from 'rxjs';
 
 export class VideoGridComponent implements OnInit {
   videos: Video[];
+  observableTest: Observable<any>
+  errorMessage: String;
+  user_data: any;
 
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.getVideos();
-    console.log(this.getVideos());
+    
   }
 
-  getVideos(): void {
-    this.apiService.getVideos()
-    .subscribe(videos => this.videos = videos);
-  }
+  // Function to call api siervice and grab list of videos. 
+  // TODO: Filter to take in tab id/name/key to filter results in object based on tab
+  /* getVideos(): void {
+    this.apiService.getVideos().subscribe(
+      res => {
+          let video = res[0]['content'];
+          let video = video["713"];
+          console.log(video_data[0]["title"]);
+          this.video_data = video_data;
+      }
+    )
+  } */
 
 }

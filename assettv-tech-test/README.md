@@ -16,12 +16,25 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). *Currently no Unit Tests have been implemented but can be done in the future*
 
-## Running end-to-end tests
+## TO DO
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Application is currently incomplete. Service layer has been created to call the API Json feed. Which can currently retrieve the JSON feed via a GET method. This needs to be expanded to allow for the results to be filtered by the TAB ID. 
 
-## Further help
+* Need creation of a search service that will search on the collected results based on either people or terms and update the data to show updated version in the view.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Data to be binded to view and create ngfor loop to iterate through list of videos and dynamically create grid
+
+* Bootstrap model needs to be implemented to allow for each video modal pop up
+
+## Improvements or suggestions 
+
+* Implement lazy image loading using Lozad.js (NPM package)
+
+* Compatabitie across browsers and different sizes. May also need to consider polyfil for the API for older browsers
+
+* Karma unit testing.
+
+
+

@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  // URL for API
+  apiUrl : 'https://titan.asset.tv/api/channel-view-json/2240'
 };
 
 /*

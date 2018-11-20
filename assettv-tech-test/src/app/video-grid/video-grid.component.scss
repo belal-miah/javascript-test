@@ -1,0 +1,22 @@
+.container {
+    padding: 50px 0px 0px 1px;
+
+    h2 {
+        font-family: inherit;
+        font-weight: 400;
+        line-height: 1.1;
+        color: inherit;
+    }
+
+    .row {
+        margin-top: 70px;
+    }
+
+    .col-md-4 img {
+        width: 350px;
+    }
+
+    p:first-of-type {
+        padding-top: 15px;
+    }
+}

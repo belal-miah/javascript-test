@@ -23,15 +23,15 @@ export class VideoGridComponent implements OnInit {
 
   // Function to call api siervice and grab list of videos. 
   // TODO: Filter to take in tab id/name/key to filter results in object based on tab
-  /* getVideos(): void {
+  getVideos(): void {
     this.apiService.getVideos().subscribe(
       res => {
-          let video = res[0]['content'];
-          let video = video["713"];
+          let videos = res[0]['content'];
+          let videos = video["713"];
           console.log(video_data[0]["title"]);
           this.video_data = video_data;
       }
     )
-  } */
+  }
 
 }
